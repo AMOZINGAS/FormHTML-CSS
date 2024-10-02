@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h2 id="titleCreate">Create Account</h2>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-section half">
+                    <label for="first-name"><Strong>First name *</Strong></label>
+                    <input type="text" id="first-name" placeholder="enter your first name">
+                </div>
+                <div class="form-section half">
+                    <label for="last-name"><Strong>Last name *</Strong></label>
+                    <input type="text" id="last-name" placeholder="enter your last name">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for="email"><Strong>Email *</Strong></label>
+                <input type="email" id="email" placeholder="enter your email">
+            </div>
+
+            <div class="form-row">
+                <div class="form-section half">
+                    <label for="password"><Strong>Password *</Strong></label>
+                    <input type="password" id="password" placeholder="enter your password">
+                </div>
+                <div class="form-section half">
+                    <label for="confirm-password"><Strong>Confirm Password *</Strong></label>
+                    <input type="password" id="confirm-password" placeholder="enter your password again">
+                </div>
+            </div>
+
+            <!-- Línea para género y hobbies -->
+            <div class="form-row">
+                <div class="form-section">
+                    <label><Strong>Gender:</Strong></label>
+                    <div class="inline-options">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label class="genderHobbie" for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label class="genderHobbie" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label><Strong>Hobbies:</Strong></label>
+                    <div class="inline-options">
+                        <input type="checkbox" id="music" name="hobbies" value="Music">
+                        <label class="genderHobbie" for="music">Music</label>
+                        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                        <label class="genderHobbie" for="sports">Sports</label>
+                        <input type="checkbox" id="travel" name="hobbies" value="Travel">
+                        <label class="genderHobbie" for="travel">Travel</label>
+                        <input type="checkbox" id="movies" name="hobbies" value="Movies">
+                        <label class="genderHobbie" for="movies">Movies</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-section half">
+                    <label for="income-source"><Strong>Source of Income</Strong></label>
+                    <select id="income-source">
+                        <option value="employed">Employed</option>
+                        <option value="self-employed">Self-employed</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </div>
+                <div class="form-section half">
+                    <label for="income"><Strong>Income</Strong></label>
+                    <input id="miInputRange" type="range" id="income" min="1" max="400" step="1" value="1">
+                    <label id="miSpanRange"><Strong>0K</Strong></label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-section half">
+                    <label for="profile-picture"><Strong>Upload Profile Picture</Strong></label>
+                    <input type="file" id="profile-picture">
+                </div>
+                <div class="form-section half">
+                    <label for="age"><Strong>Age</Strong></label>
+                    <input type="number" id="age" value="18">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for="bio"><Strong>Bio</Strong></label>
+                <textarea id="bio" rows="4"></textarea>
+            </div>
+
+            <div class="form-footer">
+                <button type="submit"><Strong>Create</Strong></button>
+            </div>
+        </form>
+    </div>
+    <script>
+    </script>
+</body>
+</html>

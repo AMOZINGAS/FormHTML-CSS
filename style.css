@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfeff4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10%;
+}
+
+#titleCreate{
+
+    color: black;
+
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px; /* Ajuste de ancho */
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #eef3f7;
+    padding: 10px;
+    border-bottom: 2px solid #c8d6e5;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-header h2 {
+    font-size: 24px;
+    color: black;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    display: block;
+    font-size: 14px;
+    color: #45a049;
+    margin-bottom: 5px;
+}
+
+.form-section label.genderHobbie {
+
+    color: black;
+
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"],
+.form-section input[type="number"],
+.form-section input[type="file"],
+.form-section textarea,
+.form-section select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #eef3f7;
+}
+
+.form-section input[type="radio"],
+.form-section input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-section input[type="range"] {
+    width: 80%;
+}
+
+.form-section #miSpanRange {
+    font-size: 14px;
+    color: white;
+    padding: 2px;
+    background: #45a049;
+    display: inline-block; /* Cambiar a inline-block */
+    margin-left: 10px; /* Agregar un margen a la izquierda para separación */
+}
+/* .form-section #miSpanRange {
+    font-size: 14px;
+    color: white;
+    padding: 2px;
+    background: #45a049;
+} */
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-row .form-section {
+    width: 48%;
+}
+
+.inline-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inline-options label {
+    margin-right: 10px;
+}
+
+
+
+/* Específico para género y hobbies */
+.form-section {
+    margin-bottom: 15px;
+}
+
+.form-footer {
+    text-align: right;
+    margin-top: 20px;
+    background-color: #eef3f7;
+    padding: 10px;
+    border-top: 2px solid #c8d6e5;
+    border-radius: 0 0 10px 10px;
+}
+
+.form-footer button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-footer button:hover {
+    background-color: #45a049;
+}
