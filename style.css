@@ -118,10 +118,13 @@ body {
     margin-right: 10px;
 }
 
-
-
-/* Específico para género y hobbies */
 .form-section {
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
     margin-bottom: 15px;
 }
 

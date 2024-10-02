@@ -8,101 +8,108 @@
     <script src="config.js" defer></script>
 </head>
 <body>
-    <div class="form-container">
-        <div class="form-header">
+    <main class="form-container">
+        <header class="form-header">
             <h2 id="titleCreate">Create Account</h2>
-        </div>
+        </header>
         <form>
-            <div class="form-row">
-                <div class="form-section half">
-                    <label for="first-name"><Strong>First name *</Strong></label>
-                    <input type="text" id="first-name" placeholder="enter your first name">
+            <fieldset class="form-section">
+                <div class="form-row">
+                    <section class="form-section half">
+                        <label for="first-name"><strong>First name *</strong></label>
+                        <input type="text" id="first-name" placeholder="enter your first name">
+                    </section>
+                    <section class="form-section half">
+                        <label for="last-name"><strong>Last name *</strong></label>
+                        <input type="text" id="last-name" placeholder="enter your last name">
+                    </section>
                 </div>
-                <div class="form-section half">
-                    <label for="last-name"><Strong>Last name *</Strong></label>
-                    <input type="text" id="last-name" placeholder="enter your last name">
-                </div>
-            </div>
 
-            <div class="form-section">
-                <label for="email"><Strong>Email *</Strong></label>
-                <input type="email" id="email" placeholder="enter your email">
-            </div>
+                <section class="form-section">
+                    <label for="email"><strong>Email *</strong></label>
+                    <input type="email" id="email" placeholder="enter your email">
+                </section>
 
-            <div class="form-row">
-                <div class="form-section half">
-                    <label for="password"><Strong>Password *</Strong></label>
-                    <input type="password" id="password" placeholder="enter your password">
+                <div class="form-row">
+                    <section class="form-section half">
+                        <label for="password"><strong>Password *</strong></label>
+                        <input type="password" id="password" placeholder="enter your password">
+                    </section>
+                    <section class="form-section half">
+                        <label for="confirm-password"><strong>Confirm Password *</strong></label>
+                        <input type="password" id="confirm-password" placeholder="enter your password again">
+                    </section>
                 </div>
-                <div class="form-section half">
-                    <label for="confirm-password"><Strong>Confirm Password *</Strong></label>
-                    <input type="password" id="confirm-password" placeholder="enter your password again">
-                </div>
-            </div>
+            </fieldset>
 
-            <!-- Línea para género y hobbies -->
-            <div class="form-row">
-                <div class="form-section">
-                    <label><Strong>Gender:</Strong></label>
-                    <div class="inline-options">
-                        <input type="radio" id="male" name="gender" value="Male">
-                        <label class="genderHobbie" for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="Female">
-                        <label class="genderHobbie" for="female">Female</label>
-                    </div>
+            <fieldset class="form-section">
+                <div class="form-row">
+                    <section class="form-section">
+                        <label><strong>Gender:</strong></label>
+                        <div class="inline-options">
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label class="genderHobbie" for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label class="genderHobbie" for="female">Female</label>
+                        </div>
+                    </section>
+                    <section class="form-section">
+                        <label><strong>Hobbies:</strong></label>
+                        <div class="inline-options">
+                            <input type="checkbox" id="music" name="hobbies" value="Music">
+                            <label class="genderHobbie" for="music">Music</label>
+                            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                            <label class="genderHobbie" for="sports">Sports</label>
+                            <input type="checkbox" id="travel" name="hobbies" value="Travel">
+                            <label class="genderHobbie" for="travel">Travel</label>
+                            <input type="checkbox" id="movies" name="hobbies" value="Movies">
+                            <label class="genderHobbie" for="movies">Movies</label>
+                        </div>
+                    </section>
                 </div>
-                <div class="form-section">
-                    <label><Strong>Hobbies:</Strong></label>
-                    <div class="inline-options">
-                        <input type="checkbox" id="music" name="hobbies" value="Music">
-                        <label class="genderHobbie" for="music">Music</label>
-                        <input type="checkbox" id="sports" name="hobbies" value="Sports">
-                        <label class="genderHobbie" for="sports">Sports</label>
-                        <input type="checkbox" id="travel" name="hobbies" value="Travel">
-                        <label class="genderHobbie" for="travel">Travel</label>
-                        <input type="checkbox" id="movies" name="hobbies" value="Movies">
-                        <label class="genderHobbie" for="movies">Movies</label>
-                    </div>
-                </div>
-            </div>
+            </fieldset>
 
-            <div class="form-row">
-                <div class="form-section half">
-                    <label for="income-source"><Strong>Source of Income</Strong></label>
-                    <select id="income-source">
-                        <option value="employed">Employed</option>
-                        <option value="self-employed">Self-employed</option>
-                        <option value="unemployed">Unemployed</option>
-                    </select>
+            <fieldset class="form-section">
+                <div class="form-row">
+                    <section class="form-section half">
+                        <label for="income-source"><strong>Source of Income</strong></label>
+                        <select id="income-source">
+                            <option value="employed">Employed</option>
+                            <option value="self-employed">Self-employed</option>
+                            <option value="unemployed">Unemployed</option>
+                        </select>
+                    </section>
+                    <section class="form-section half">
+                        <label for="income"><strong>Income</strong></label>
+                        <input id="miInputRange" type="range" min="1" max="400" step="1" value="1">
+                        <label id="miSpanRange"><strong>0K</strong></label>
+                    </section>
                 </div>
-                <div class="form-section half">
-                    <label for="income"><Strong>Income</Strong></label>
-                    <input id="miInputRange" type="range" id="income" min="1" max="400" step="1" value="1">
-                    <label id="miSpanRange"><Strong>0K</Strong></label>
-                </div>
-            </div>
+            </fieldset>
 
-            <div class="form-row">
-                <div class="form-section half">
-                    <label for="profile-picture"><Strong>Upload Profile Picture</Strong></label>
-                    <input type="file" id="profile-picture">
+            <fieldset class="form-section">
+                <div class="form-row">
+                    <section class="form-section half">
+                        <label for="profile-picture"><strong>Upload Profile Picture</strong></label>
+                        <input type="file" id="profile-picture">
+                    </section>
+                    <section class="form-section half">
+                        <label for="age"><strong>Age</strong></label>
+                        <input type="number" id="age" value="18">
+                    </section>
                 </div>
-                <div class="form-section half">
-                    <label for="age"><Strong>Age</Strong></label>
-                    <input type="number" id="age" value="18">
-                </div>
-            </div>
 
-            <div class="form-section">
-                <label for="bio"><Strong>Bio</Strong></label>
-                <textarea id="bio" rows="4"></textarea>
-            </div>
+                <section class="form-section">
+                    <label for="bio"><strong>Bio</strong></label>
+                    <textarea id="bio" rows="4"></textarea>
+                </section>
+            </fieldset>
 
-            <div class="form-footer">
-                <button type="submit"><Strong>Create</Strong></button>
-            </div>
+            <footer class="form-footer">
+                <button type="submit"><strong>Create</strong></button>
+            </footer>
         </form>
-    </div>
+    </main>
     <script>
     </script>
 </body>
