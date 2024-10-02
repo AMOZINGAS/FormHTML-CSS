@@ -1,14 +1,17 @@
 document.addEventListener('DOMContentLoaded', (event) =>{
-    const rangeInput = document.getElementById('miInputRange');
-    const rangeLabel = document.getElementById('miSpanRange');
+
+    const miInputRange = document.getElementById('miInputRange');
+    const miSpanRange = document.getElementById('miSpanRange');
 
     function updateLabel() {
-        const value = rangeInput.value;
 
-        rangeLabel.innerHTML = `<strong>${value * 1}K</strong>`;
+        const value = miInputRange.value;
+
+        miSpanRange.innerHTML = `<strong>${value * 1}K</strong>`;
     }
 
-    rangeInput.addEventListener('input', updateLabel);
+    miInputRange.addEventListener('input', updateLabel);
 
     updateLabel();
+    
 });
